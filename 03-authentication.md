@@ -1,7 +1,5 @@
-Set authentication to "Bearer Token"
+1.  Set authentication to "Bearer Token"
 
-Login to the cluster and run "oc whoami -t"
+2.  Login to the cluster and run "oc whoami -t"
 
-Save the token and paste it into the "Token" field.
-
-
+3. Save the token and paste it into the "Token" field.
