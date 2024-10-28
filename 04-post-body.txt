@@ -1,0 +1,8 @@
+Select "Body" tab and paste the following under "QUERY"
+
+query mySearch($input: [SearchInput]) {
+        searchResult: search(input: $input) {
+                items
+        }
+}
+

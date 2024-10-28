@@ -1,0 +1,12 @@
+Select "Body" tab and paste the following under "GRAPHQL VARIABLES"
+
+GraphQL variables
+{"input":[
+	{
+		"keywords":[],
+		"filters":[
+			{"property":"kind","values":["nodes"]}],
+		"limit":100
+	}
+]}
+

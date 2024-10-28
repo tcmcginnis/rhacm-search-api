@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: search-api
+  namespace: open-cluster-management
+spec:
+  # Modify domain name to match yours
+  host: search-api-open-cluster-management.apps.ocp4.mclabs.us
+  port:
+    targetPort: search-api
+  tls:
+    insecureEdgeTerminationPolicy: None
+    termination: passthrough
+  to:
+    kind: Service
+    name: search-search-api
+    weight: 100
+  wildcardPolicy: None
